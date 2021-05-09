@@ -9,7 +9,7 @@ const LoginButton = () => {
 
   return (
     !isAuthenticated && (
-      // the button will be equal with loginWithRedirect
+      // the button will be and arrow function with loginWithRedirect
       <button onClick={() => loginWithRedirect()}>
         Log In
       </button>
