@@ -9,7 +9,7 @@ function App() {
   const { isLoading } = useAuth0();
 
   if (isLoading) return <div>Loading...</div>
-
+  // we are render it in our app
   return (
     <>
       <LoginButton />
