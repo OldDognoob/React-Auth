@@ -4,6 +4,8 @@ import JSONPretty from 'react-json-pretty';
 
 const Profile = () => {
     const {user, isAuthenticated} = useAuth0();
+    // if the user is authenticated , means if that is true then render all the 
+    // above information
     return (
         isAuthenticated && (
             <div>
@@ -11,7 +13,6 @@ const Profile = () => {
             <h2>{user.name}</h2>
             <p>{user.mail}</p>
             <JSONPretty data={user}/>
-            {/* {JSON.stringify(user, null, 2)} */}
         </div>
         )
         
