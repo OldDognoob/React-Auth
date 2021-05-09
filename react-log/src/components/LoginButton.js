@@ -6,7 +6,7 @@ const LoginButton = () => {
   // use the hook inside our function
   // we are going to destructure it, and equal to our hook
   const { loginWithRedirect, isAuthenticated } = useAuth0();
-
+  //if the user is not authenticated, if it is not true 
   return (
     !isAuthenticated && (
       // the button will be and arrow function with loginWithRedirect
